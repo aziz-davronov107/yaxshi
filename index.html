@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist || Home</title>
+    <link rel="icon" href="./img/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body style>
+    <!-- header -->
+    <header class="header_section">
+        <div class="container header">
+            <div class="header_left"><img src="./img/logo.svg" alt="logo" class="logo"></div>
+            <div class="header_right">
+                <ul class="header_list">
+                    <li class="header_list_item"><a href="index.html" class="header_link">Home</a></li>
+                    <li class="header_list_item"><a href="contact.html" class="header_link">Portfolio</a></li>
+                    <li class="header_list_item"><a href="portfolio.html" class="header_link">Contact me</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+    .<!-- main -->
+    <main class="main_section">
+        <div class="container container_main">
+            <div class="hero-content">
+                <div class="hero__text">Hey, I’m Alex Spencer and I love building beautiful websites</div>
+                <a href="#about" class="button button-about"><span class="icon"><img src="img/icon.svg"
+                            alt="icon"></span> <span class="text"> about me</span></a>
+            </div>
+        </div>
+        <div class="container about-container" id="about">
+            <div class="about-img">
+                <img src="./img/man.jpg" alt="about image">
+            </div>
+            <div class="about-context">
+                <hr>
+                <div class="text">
+                    <h1>About Me</h1>
+                    <p>I’m a junior front-end developer looking for a new role in an exciting company. I focus on
+                        writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing
+                        JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based
+                        in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not
+                        coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run
+                        or cycling. I’d love you to check out my work.</p>
+                    <a href="/portfolio.html" class="button button-main">Go to portfolio</a>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="contact-away container">
+            <h1>Interested in doing a project together?</h1>
+            <hr>
+            <a href="contact.html" class="button-main">contact me</a>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-container container">
+            <div class="footer-left">
+                <div class="footer-logo">▲▼</div>
+
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT ME</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        .container_main {
+            min-height: 600px;
+            width: 1140px;
+            background-image: url('./img/index-hero-bg.jpg');
+            background-size: cover;
+            position: relative;
+
+        }
+
+        .hero__text {
+            font-size: 2rem;
+            color: #fff;
+            font-family: sans-serif;
+
+        }
+
+        .hero-content {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 40vh;
+            width: 50vh;
+            background: transparent;
+            top: 60%;
+
+        }
+
+        .button-about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 10rem;
+            height: 3rem;
+            color: #fff;
+            background-color: #33323D;
+            transition: 1s;
+        }
+
+        .button-about .icon {
+            background-color: #292931;
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 3rem;
+        }
+
+        .button {
+            text-decoration: none;
+            color: #fff;
+            font-family: sans-serif;
+            transition: .4s;
+        }
+
+        .button-main {
+            text-decoration: none;
+            color: #555;
+            border: 1px solid #555;
+            width: 12rem;
+            height: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            transition: .4s;
+            font-size: 1.2rem;
+        }
+
+        .button-main:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        .text {
+            font-size: 20px;
+        }
+
+        .button-about:hover {
+            background-color: #271919;
+
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        a {
+            text-transform: capitalize;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+        }
+
+        .about-container {
+            display: flex;
+            justify-content: space-between;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 8rem 0;
+            overflow: hidden;
+        }
+
+        .about-context {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 60%;
+            padding: 0 10rem;
+        }
+
+        .about-context .text {
+            display: flex;
+            flex-direction: column;
+            font-size: 1rem;
+            gap: 20px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .header_list {
+            width: 20rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header_list_item {
+            transition: .4s;
+        }
+
+        .header_list_item:hover {
+            transform: translateY(-.3rem);
+        }
+
+        .header_link {
+            text-decoration: none;
+            color: #000;
+            font-family: sans-serif;
+            transition: .4s;
+        }
+
+        .header_link:hover {
+            color: gray;
+        }
+
+        .contact-away {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .contact-away hr {
+            width: 200px;
+            height: 1px;
+            width: 50%;
+
+        }
+        footer {
+            background-color: #474e50;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+
+        .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+
+
+        .footer-left {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        }
+
+        .footer-logo {
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 2px;
+        }
+
+        .footer-nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        padding: 0;
+        margin: 0;
+        }
+
+        .footer-nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: color 0.3s ease;
+        }
+
+        .footer-nav a:hover {
+        color: #ccc;
+        }
+
+        .footer-social {
+        display: flex;
+        gap: 20px;
+        }
+
+        .footer-social a {
+        color: white;
+        font-size: 14px;
+        transition: color 0.3s ease;
+        }
+
+        .footer-social a:hover {
+        color: #ccc;
+        }
+
+
+        /* .contact-away h1::before{
+            border: 1px solid #000;
+            content: "";
+            width: 100%;
+            display: block;
+        } */
+    </style>
+</body>
+
+</html>
