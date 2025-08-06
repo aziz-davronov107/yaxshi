@@ -4,23 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minimalist || Portfolio</title>
-    <link rel="icon" href="./img/logo.svg">
+    <link rel="icon" href="../img/logo-white.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- header -->
      <header class="header_section">
         <div class="container header">
-            <div class="header_left"><img src="./img/logo.svg" alt="logo" class="logo"></div>
+            <div class="header_left"><img src="../img/logo.svg" alt="logo" class="logo"></div>
             <div class="header_right">
                 <ul class="header_list">
-                    <li class="header_list_item"><a href="index.html" class="header_link">Home</a></li>
-                    <li class="header_list_item"><a href="portfolio.html" class="header_link">Portfolio</a></li>
-                    <li class="header_list_item"><a href="contact.html" class="header_link">Contact me</a></li>
+                    <li class="header_list_item"><a href="#" class="header_link">Home</a></li>
+                    <li class="header_list_item"><a href="#" class="header_link header_link_2">Portfolio</a></li>
+                    <li class="header_list_item"><a href="#" class="header_link">Contact me</a></li>
                 </ul>
             </div>
         </div>
      </header>
     <!-- header -->
+     <!-- manage -->
+      <section class="manage_section">
+        <div class="container manage">
+            <div class="img_container"><img src="../img/portfolio-index/manage.jpg" alt="manage" class="manage_img"></div>
+            <div class="description_container">
+                <h1 class="manage_title">Manage</h1>
+                <p class="manage_paragraph">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+                <a href="#" class="manage_link">View project</a>
+            </div>
+        </div>
+      </section>
+     <!-- manage -->
+      <!-- bookmark -->
+      <section class="manage_section">
+        <div class="container manage">
+            <div class="description_container">
+                <h1 class="manage_title">Bookmark</h1>
+                <p class="manage_paragraph">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.</p>
+                <a href="#" class="manage_link">View project</a>
+            </div>
+            <div class="img_container"><img src="../img/portfolio-index/bookmark.jpg" alt="bookmark" class="manage_img"></div>
+        </div>
+      </section>
+      <!-- bookmark -->
+       <!-- insure -->
+        <section class="manage_section">
+        <div class="container manage">
+            <div class="img_container"><img src="../img/portfolio-index/insure.jpg" alt="manage" class="manage_img"></div>
+            <div class="description_container">
+                <h1 class="manage_title">Insure</h1>
+                <p class="manage_paragraph">This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.</p>
+                <a href="#" class="manage_link">View project</a>
+            </div>
+        </div>
+      </section>
+       <!-- insure -->
+        <!-- fylo -->
+         <section class="manage_section">
+        <div class="container manage">
+            <div class="description_container">
+                <h1 class="manage_title">Fylo</h1>
+                <p class="manage_paragraph">This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.</p>
+                <a href="#" class="manage_link">View project</a>
+            </div>
+            <div class="img_container"><img src="../img/portfolio-index/fylo.jpg" alt="bookmark" class="manage_img"></div>
+        </div>
+      </section>
+        <!-- fylo -->
+         <!-- contact -->
+          <section class="contact_section">
+            <div class="container contact">
+                <h1 class="contact_title">Interested in doing <br> a project together?</h1>
+                <a href="#" class="contact_link">Contact me</a>
+            </div>
+          </section>
+         <!-- contact -->
+          <!-- footer -->
+           <footer>
+  <div class="footer-container">
+    <div class="footer-left">
+      <div class="footer-logo">▲▼</div>
+
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT ME</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</footer>
+          <!-- footer -->
      <style>
         *{
             margin: 0;
@@ -38,11 +118,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 3rem;
+            padding: 3rem 0;
         }
 
         .header_list{
-            width: 20rem;
+            width: 18rem;
             display: flex;
             justify-content: space-between;
         }
@@ -56,15 +136,149 @@
         }
 
         .header_link{
+            font-size: 0.8rem;
             text-decoration: none;
+            text-transform: uppercase;
             color: #000;
             font-family: sans-serif;
             transition: .4s;
         }
 
+        .header_link_2{
+            color: lightgreen;
+        }
+
         .header_link:hover{
             color: gray;
         }
+
+        .manage{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            grid-gap: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        .manage_title{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2.5rem;
+            font-weight: lighter;
+            margin-bottom: 2rem;
+        }
+
+        .manage_paragraph{
+            width: 22rem;
+            line-height: 2rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-bottom: 3rem;
+        }
+
+        .manage_link{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            font-family: sans-serif;
+            padding: .8rem;
+            border: 1px solid #000;
+            transition: .4s;
+        }
+
+        .manage_link:hover{
+            background: #000;
+            color: #fff;
+        }
+
+        .contact{
+            height: 10rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .contact_link{
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            color: #000;
+            padding: 0.8rem;
+            border: 1px solid #000;
+            transition: .4s;
+        }
+
+        .contact_link:hover{
+            background: #000;
+            color: #fff;
+        }
+
+        footer {
+  background-color: #474e50;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-logo {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #ccc;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ccc;
+}
+
      </style>
 </body>
 </html>
